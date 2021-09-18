@@ -136,7 +136,4 @@ class FuncionarioTest {
             assertEquals("Nome é obrigatório", e.getMessage());
         }
     }
-
-
-
 }

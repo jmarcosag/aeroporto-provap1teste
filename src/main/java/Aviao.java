@@ -4,7 +4,7 @@ public class Aviao {
 
     public Aviao(String modelo) {
         if ((modelo == null) || (modelo.trim().equals(""))) {
-            throw new NullPointerException("Nome é obrigatório");
+            throw new NullPointerException("Modelo é obrigatório");
         }
         this.modelo = modelo;
     }
@@ -15,7 +15,7 @@ public class Aviao {
 
     public void setModelo(String modelo) {
         if ((modelo == null) || (modelo.trim().equals(""))) {
-            throw new NullPointerException("Nome é obrigatório");
+            throw new NullPointerException("Modelo é obrigatório");
         }
         this.modelo = modelo;
     }
