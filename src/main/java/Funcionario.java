@@ -2,20 +2,16 @@ public class Funcionario extends Pessoa {
 
     private Companhia companhia;
 
-    public Funcionario(String nome, Companhia companhia) {
-        super(nome);
+    public Funcionario(String nome, String cpf, int idade, Companhia companhia) {
+        super(nome, cpf, idade);
         this.companhia = companhia;
     }
 
     public Companhia getCompanhia() {
-        return companhia;
+        return this.companhia;
     }
 
     public void setCompanhia(Companhia companhia) {
         this.companhia = companhia;
-    }
-
-    public String getNomeEstadoCurso() {
-        return this.companhia.getNomeCompanhia();
     }
 }

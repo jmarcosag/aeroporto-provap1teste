@@ -2,13 +2,20 @@ public class Pessoa {
 
     private String nome;
     private String cpf;
-    private int idade;
+    private Integer idade;
 
-    public Pessoa(String nome) {
+    public Pessoa(String nome, String cpf, Integer idade) {
         if ((nome == null) || (nome.trim().equals(""))) {
             throw new NullPointerException("Nome é obrigatório");
         }
+        else {
+            if ((cpf == null) || (cpf.trim().equals(""))) {
+                throw new NullPointerException("CPF é obrigatório");
+            }
+        }
         this.nome = nome;
+        this.cpf = cpf;
+        this.idade = idade;
     }
 
     public String getNome() {

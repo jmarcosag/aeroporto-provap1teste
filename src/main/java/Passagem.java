@@ -7,6 +7,17 @@ public class Passagem {
     private Passageiro passageiro;
     private Aviao aviao;
 
+    public Passagem(Passageiro passageiro, Aviao aviao) {
+        if ((passageiro == null) || (passageiro.equals(""))) {
+            throw new NullPointerException("Passageiro é obrigatório");
+        }
+        this.passageiro = passageiro;
+        if ((aviao == null) || (aviao.equals(""))) {
+            throw new NullPointerException("Avião é obrigatório");
+        }
+        this.aviao = aviao;
+    }
+
     public String getCodigo() {
         return codigo;
     }
